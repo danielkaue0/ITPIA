@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créditos - ITPIA</title>
+    <meta name="description" content="Créditos, agradecimentos e formas de apoiar a ITPIA">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/logo.png" alt="ITPIA Logo" class="logo" onerror="this.src='https://via.placeholder.com/150x50?text=ITPIA'">
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="qrcodes.html">QR Codes</a>
+            <a href="creditos.html">Créditos</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Créditos e Agradecimentos</h1>
+        
+        <section class="creditos-section">
+            <h2>🙏 Agradecimentos Especiais</h2>
+            <p>Agradecemos profundamente a todos que contribuíram para tornar este projeto realidade:</p>
+            <ul>
+                <li>Devs ITPIA</li>
+                <li>Idealizadores do projeto</li>
+                <li>Equipe Financeira</li>
+                <li>Equipe de Design</li>
+                <li>Pesquisadores Chefes</li>
+            </ul>
+        </section>
+
+        <section class="doacoes-section">
+            <h2>💰 Apoie nossa causa</h2>
+            <p>Sua contribuição ajuda a levar tecnologia e inclusão digital para pessoas de idade avançada. Qualquer valor faz a diferença!</p>
+            
+            <div class="doacoes-opcoes">
+                <div class="doacao-card">
+                    <h3>📱 PIX</h3>
+                    <p>Chave: <strong>emailfake@itpia.bobson</strong></p>
+                    <button class="btn-copiar" onclick="copiarTexto('emailfake@itpia.bobson')">Copiar Chave</button>
+                </div>
+                
+                <div class="doacao-card">
+                    <h3>🌐 PayPal</h3>
+                    <p>Email: <strong>emailfake@itpia.bobson</strong></p>
+                    <button class="btn-copiar" onclick="copiarTexto('emailfake@itpia.bobson')">Copiar Email</button>
+                </div>
+                
+                <div class="doacao-card">
+                    <h3>🏦 Transferência Bancária</h3>
+                    <p>Banco: XXX - Banco Bobson<br>
+                    Agência: BOBS-ON<br>
+                    Conta: BOBSO-N</p>
+                    <button class="btn-copiar" onclick="copiarTexto('BOBS-ON BOBS-ON')">Copiar Dados</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="parceiros-section">
+            <h2>🤝 Parceiros e Colaboradores</h2>
+            <p>Contamos com o apoio essencial de:</p>
+            <div class="parceiros-grid">
+                <div class="parceiro">Instituição Parceira FAKE</div>
+                <div class="parceiro">Instituição Parceira FAKE</div>
+                <div class="parceiro">Instituição Parceira FAKE</div>
+                <div class="parceiro">Instituição Parceira FAKE</div>
+                <div class="parceiro">Bobson</div>
+                <div class="parceiro">Bobson</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ITPIA - Tecnologia para Pessoas de Idade Avançada</p>
+        <p>contato@itpia.com.br</p>
+    </footer>
+
+    <script>
+    function copiarTexto(texto) {
+        navigator.clipboard.writeText(texto).then(() => {
+            alert('✅ Copiado: ' + texto);
+        }).catch(() => {
+            alert('❌ Erro ao copiar. Copie manualmente: ' + texto);
+        });
+    }
+    </script>
+</body>
+</html>
